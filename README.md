@@ -1,0 +1,1 @@
+https://themes.shopify.com/themes/stiletto/styles/organic/preview?industry%5B%5D=health-and-beauty&surface_detail=health-and-beauty&surface_inter_position=1&surface_intra_position=6&surface_type=industry
