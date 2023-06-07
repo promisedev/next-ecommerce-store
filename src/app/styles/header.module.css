@@ -1,8 +1,15 @@
 .header{ width:100%; height:100%; display:flex; flex-direction:column}
-.div1{width:100%; dislay:flex; justify-content: space-between;}
-.div2{width:100%; flex:1}
+.div1{width:100%; display:flex; justify-content: space-between;}
 .div3{width:100%; height:90px;}
-.list{ width:500px; margin-left: 30px; list-style-type: none; margin:0; padding:0; display:flex;background:red}
+.list{ width:500px; height:70px ;list-style-type: none; margin:0; padding:0; display:flex;background:none;margin-left: 30px;}
 
-.list_li{}
-.list_li>a{text-decoration:none; color:var(--general)}
+.list_li{margin-right:10px; display:flex; align-items: center; justify-content:center;}
+.list_li>a{text-decoration:none; color:var(--general); font-size:13px; font-weight: lighter; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.list_li>a:hover{text-decoration:underline}
+/* ----------------------------------------- */
+.socials{ width:150px; height:70px; background:none; display:flex; align-items: center; justify-content: space-between; margin-right:10%}
+.socials>a{height:100%; display:flex; align-items: center; justify-content:center;}
+.social_icon{color:var(--general); }
+
+.div2{width:100%; flex:1; display:flex;justify-content: center; align-items: center;background:none}
+.logo{width:120px }
