@@ -1,0 +1,13 @@
+.main{ width:100%; height: 500px; background:var(--primary); }
+
+.hero_cont{width:100%; height:100%; display:flex; flex-direction: column;}
+.header{width:100%; height:120px; background: none;}
+.intro{ width:100%; flex:1}
+
+
+
+
+
+
+
+
