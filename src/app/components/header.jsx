@@ -15,16 +15,22 @@ const [showcloth,setShowcloth]= useState(false)
 //-------------------------------------setting up state vaiables above
 const dropModal =(e)=>{
   const id = e.currentTarget.dataset.id
+  const len =e.currentTarget.parentElement.children.length;
 
-  if(id ==1){setShowdress(false)
-  setShowcloth(true)
-  }else if(id ==2){
-setShowdress(true)
-  setShowcloth(false)
-  }
+const element = e.currentTarget.parentElement.children[len-1]
+  
+    element.classList.add(`${styles.show_modal1}`)  
 
 }
+const removeModal =(e)=>{
+  const id = e.currentTarget.dataset.id
+  const len =e.currentTarget.parentElement.children.length;
 
+const element = e.currentTarget.parentElement.children[len-1]
+  
+    element.classList.remove(`${styles.show_modal1}`)   
+
+}
 
   {/* --------settin all functions an parameter above----------------------- */}
     const [hover,setHover]=useState(false)
@@ -98,18 +104,21 @@ setShowdress(true)
         <div className={styles.pages_div}>
             <ul className={styles.pages_list}>
 {Pages().map((page,index)=>(
-    <li key={index} className={styles.page_li} data-id={index+1} onMouseOver={dropModal} onClick={dropModal}>
+    <li key={index} className={styles.page_li} data-id={index+1} onMouseOver={dropModal} onClick={dropModal} onMouseOut={removeModal}>
+      {/* ----------------- */}
+     {/*-----------------------------  */}
 {page?.pages.length>0?(<span className={styles.link_txt}>{page.name} <ArrowBackIos style={{fontSize:"12px", transform:"rotate(-90deg)" }} className={styles.page_icon}/></span>):(<Link href={page.link} className={styles.link_txt}>{page.name}</Link>)}
 
 
     </li>
 ))}
+{/*// ----------------------setup modal--------------------------------*/}
+<div className={styles.modal_div}>my dress {1}</div> 
 
 
             </ul>
-{/*// ----------------------setup modal--------------------------------*/}
-{showdress&&<div className={styles.modal_div}>my dress</div>}
-{showcloth&&<div className={styles.modal_div}>mycloth</div>}
+
+
 
         </div>
         {/*// ----------------------cart--------------------------------*/}
