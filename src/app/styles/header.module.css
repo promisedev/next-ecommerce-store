@@ -15,14 +15,14 @@
 /* --------------------------------------------------------------------- */
 .div3{width:100%; height:60px;display:flex; background:none}
 .search_div{flex:0.7}
-.pages_div{flex:1;display:flex; align-items:center; justify-content: center;background-color: none;position:relative}
+.pages_div{flex:1;display:flex;position:relative; align-items:center; justify-content: center;background-color: none;}
 .pages_list{margin:0; padding:0; list-style-type:none; display:flex;justify-content:space-between;background-color: none; width:100%;position:absolute}
 .page_li{color:var(--general); }
 .page_icon{}
 .link_txt{text-decoration:none; color:var(--general); font-size:14px;position:relative;cursor:pointer; text-transform:capitalize}
 .link_txt::after{content:" "; position:absolute; width:0%;left:0; bottom:-8px; height:0.1em; ; transition: 0.3s ease-in-out;background:var(--general)}
 .link_txt:hover::after{ width:100%;  transition: 0.3s ease-in-out; }
-.modal_div{width:100vw; height:200px;display:flex;left:0px; background:#fff;position:absolute; top:50px; color:red}
+.modal_div{width:100vw; height:200px;display:flex;left:0px; background:#fff;position:absolute; top:180px; color:rgb(42, 13, 172)}
 .show_modal1{display:flex}
 .show_modal2{}
-.cart_div{flex:0.7}
+.cart_div{flex:0.7} 

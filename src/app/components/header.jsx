@@ -15,18 +15,18 @@ const [showcloth,setShowcloth]= useState(false)
 //-------------------------------------setting up state vaiables above
 const dropModal =(e)=>{
   const id = e.currentTarget.dataset.id
-  const len =e.currentTarget.parentElement.children.length;
+  //const len =e.currentTarget.parentElement.children.length; 
 
-const element = e.currentTarget.parentElement.children[len-1]
+const element = e.currentTarget.parentElement.parentElement.children[1]
   
     element.classList.add(`${styles.show_modal1}`)  
 
 }
 const removeModal =(e)=>{
   const id = e.currentTarget.dataset.id
-  const len =e.currentTarget.parentElement.children.length;
+  //const len =e.currentTarget.parentElement.children.length;
 
-const element = e.currentTarget.parentElement.children[len-1]
+const element = e.currentTarget.parentElement.parentElement.children[1]
   
     element.classList.remove(`${styles.show_modal1}`)   
 
@@ -48,7 +48,7 @@ const element = e.currentTarget.parentElement.children[len-1]
         {/* --------social link----------------------- */}
         <div className={styles.socials}>
           {Socials().map((social, index) => (
-            <a href={social.link}>
+            <a href={social.link} key={index}>
               {(index == 0 && (
                 <FacebookIcon
                   className={styles.social_icon}
@@ -112,11 +112,11 @@ const element = e.currentTarget.parentElement.children[len-1]
 
     </li>
 ))}
-{/*// ----------------------setup modal--------------------------------*/}
-<div className={styles.modal_div}>my dress {1}</div> 
 
 
             </ul>
+{/*// ----------------------setup modal--------------------------------*/}
+<div className={styles.modal_div}>my dress {1}</div> 
 
 
 

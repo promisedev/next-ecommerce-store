@@ -5,7 +5,7 @@ import Header from "./header";
 const Hero = () => {
   return (
     <section className={styles.main}>
-      <video autoPlay="true" loop mute="true" src="/assets/hero.mp4"  className={styles.vid} />
+      <video autoPlay={true} loop mute={true} src="/assets/hero.mp4"  className={styles.vid} />
       <article className={styles.hero_cont}>
         <div className={styles.header}>
           <Header />
