@@ -1,12 +1,23 @@
 :root {
-  --max-width: 1100px; 
+  --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-/* ------------------------colors----------------- */
-    --primary: rgb(0, 0, 0);
-    --general: white;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  /* ------------------------colors----------------- */
+  --primary: rgb(0, 0, 0);
+  --general: white;
+  --neutral: rgb(246, 245, 245);
+  --headerfont: Georgia, "Times New Roman", Times, serif;
+  --pinkred: rgb(224, 24, 17);
+  --grey: hsl(0, 2%, 38%);
+  --gold: rgb(224, 227, 122);
+  --darkblue: rgb(6, 6, 29);
+  --lightblue: rgb(30, 30, 85);
+  --lightgrey: rgb(175, 173, 173);
+  --neogrey: rgb(243, 243, 243);
+  --subtitle: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --title: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 * {
@@ -22,7 +33,16 @@ body {
 }
 
 body {
-  
   background: var(--general);
 }
 
+.gutter {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg=="); */
+  cursor: move;
+}

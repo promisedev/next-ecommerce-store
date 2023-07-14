@@ -1,0 +1,68 @@
+.arrivals {
+  width: 100%;
+  height: 600px;
+  margin-top: 40px;
+  display: flex;
+  position: relative;
+}
+
+.arrivals_image {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.arrivals_image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.arrivals_desc {
+  width: 50%;
+  height: 100%;
+  background: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.arrivals_desc > p {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--general);
+}
+.arrivals_desc > h2 {
+  width: 60%;
+  font-size: 50px;
+  font-weight:200;
+  font-family: var(--headerfont);
+  color: var(--general);
+  text-transform: uppercase;
+  margin: 20px 0px 20px 0px;
+}
+
+.floral_link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link1 {
+  background: var(--general);
+  color: var(--primary);
+  font-size: 14px;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.link2 {
+  background: none;
+  color: var(--general);
+  font-size: 14px;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 20px;
+  border: 0.1em solid var(--general);
+  text-decoration: none;
+}

@@ -1,0 +1,238 @@
+.outfit_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+}
+.outfit_title {
+  font-family: var(--headerfont);
+  font-size: 45px;
+  font-weight: normal;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.outfit_link {
+  text-decoration: none;
+  font-family: var(--subtitle);
+  font-size: 18px;
+  color: var(--primary);
+  position: relative;
+}
+.outfit_link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  animation: blur 0.3s ease-in-out;
+  right: 0;
+  transition: 0.3s ease;
+  left: 0px;
+  bottom: -5px;
+  position: absolute;
+  align-self: left;
+  transition: 0.3s ease;
+  background-color: black;
+}
+.outfit_link:hover::after {
+  animation: hover 0.3s ease-in-out;
+  right: 0;
+  align-self: right;
+  transition: 0.3s ease;
+}
+@keyframes hover {
+  from {
+    width: -0%;
+    transition: 0.3sease;
+  }
+  to {
+    width: 100%;
+    transition: 0.3sease;
+  }
+}
+@keyframes blur {
+  from {
+    width: 0%;
+    transition: 0.3sease;
+  }
+  to {
+    width: 100%;
+    transition: 0.3sease;
+  }
+}
+.outfit_image_cont {
+  width: 95%;
+  height: 700px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.outfit_image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.dot1 {
+  position: absolute;
+  width: fit-content;
+  display: flex;
+  left: 30%;
+  top: 40%;
+  align-items: center;
+}
+
+.dot2 {
+  position: absolute;
+  width: fit-content;
+  display: flex;
+  left: 25%;
+  top: 60%;
+  align-items: center;
+}
+.dot3 {
+  position: absolute;
+  width: fit-content;
+  display: flex;
+  left: 70%;
+  top: 70%;
+  align-items: center;
+}
+
+.dot_desc {
+  position: absolute;
+  width: 200px;
+  height: 65px;
+  background: var(--general);
+  margin-left: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 1px 2px 1px rgba(129, 127, 127, 0.6);
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+
+.dot_title {
+  font-size: 16px;
+  font-family: var(--subtitle);
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+.dot_price {
+  font-size: 14px;
+  font-family: var(--subtitle);
+  color: var(--primary);
+  margin-left: 10px;
+}
+
+/* ---------------------------------------- */
+.dotp1 {
+  display: flex;
+  position: absolute;
+  padding: 0px;
+  width: 0px;
+  height: 0px;
+  background: rgb(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.dotp2 {
+  display: flex;
+  position: absolute;
+  padding: 0px;
+  width: 0px;
+  height: 0px;
+  background: rgb(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-radius: 50%;
+}
+
+.dotp3 {
+  display: flex;
+  position: absolute;
+  padding: 0px;
+  width: 0px;
+  height: 0px;
+  background: rgb(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-radius: 50%;
+}
+.show_dotcircle {
+  animation: dotcircle 0.4s ease 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes dotcircle {
+  from {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    opacity: 0.5;
+    transition: 0.3s ease;
+  }
+  to {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #fff;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+}
+
+.outfit_dots {
+  display: flex;
+  position: absolute;
+  background: rgb(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: dots 2s ease-in-out;
+  transition: 1s ease-in-out;
+  animation-iteration-count: infinite;
+  border: 0px solid #fff;
+  transition: 0.3s ease-in-out;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+@keyframes dots {
+  from {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+  }
+  to {
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out;
+  }
+}
+.dot_small {
+  display: flex;
+  padding: 6px;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.show_outline {
+  border: 2px solid #fff;
+  transition: 0.3s ease-in-out;
+}
+.show_desc {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}

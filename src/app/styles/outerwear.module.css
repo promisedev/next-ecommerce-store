@@ -1,0 +1,66 @@
+.outerwear {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.outerwear_desc {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--general);
+  justify-content: center;
+}
+.outerwear_desc > h2 {
+  color: var(--primary);
+  font-family: var(--headerfont);
+  font-size: 50px;
+  font-weight: 200;
+  width: 95%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.link {
+  text-decoration: none;
+  width: fit-content;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: var(--primary);
+  color: var(--general);
+  padding: 15px;
+}
+
+.split_image {
+  width: 600px;
+  height: 100%;
+  position: relative;
+  cursor: ew-resize;
+  display: flex;
+  flex-direction: row;
+}
+
+.image1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.image2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+}
+
+.overflow_image {
+  width: 600px;
+  height: 100%;
+  position: absolute;
+}

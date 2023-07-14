@@ -1,13 +1,99 @@
-.main{ width:100%; height: 550px; background:var(--primary); position:relative;overflow:hidden }
-.vid{width:100%; height:auto; position:absolute}
-.hero_cont{position:absolute;width:100%; height:100%; display:flex; flex-direction: column;background:none}
-.header{width:100%; height:190px; background: none;}
-.intro{ width:100%; flex:1;background:none}
+.main {
+  width: 100%;
+  height: 550px;
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+.vid {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.hero_cont {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: none;
+}
+.header {
+  width: 100%;
+  height: 190px;
+  background: none;
+}
+.intro {
+  width: 100%;
+  flex: 1;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.intro_cont {
+  width: 70%;
+  height: 85%;
+  display: flex;
 
+  flex-direction: column;
+  justify-content: center;
+}
 
-
-
-
-
-
-
+.intro_cont > h4 {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: var(--general);
+  font-weight: normal;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro_cont > h2 {
+  text-transform: uppercase;
+  font-size: 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--general);
+  margin: 20px 0 20px 0;
+}
+.intro_cont > p {
+  font-size: 17px;
+  color: var(--general);
+  width: 100%;
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+}
+.intro_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.link1 {
+  width: fit-content;
+  padding: 15px;
+  color: var(--primary);
+  background-color: var(--general);
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+.link2 {
+  width: fit-content;
+  padding: 15px;
+  color: var(--general);
+  background-color: none;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0.1em solid var(--general);
+  margin-left: 20px;
+}

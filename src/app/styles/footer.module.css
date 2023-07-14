@@ -1,0 +1,139 @@
+.wrapper {
+  width: 100%;
+  height: 500px;
+  background: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper_item1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.about {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.about_image {
+  width: 120px;
+}
+.about > p {
+  width: 80%;
+  font-size: 15px;
+  color: var(--general);
+  color: var(--lightgrey);
+}
+/* ------------------------------------------ */
+.subpages {
+  width: 10%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.footer_title {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: var(--general);
+  margin-bottom: 10px;
+}
+.page_list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.page_list > li {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.page_list > li > a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--general);
+  text-transform: capitalize;
+  color: var(--lightgrey);
+}
+.page_list > li > a:hover {
+  color: var(--general);
+  text-decoration: underline;
+}
+
+/* ----------------------------- */
+.pages {
+  width: 10%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+/* ---------------------------------------------------- */
+.newsletter {
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.newsletter_cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.newsletter_cont > p {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--general);
+  font-family: var(--headerfont);
+}
+.newsletter_cont > form {
+  width: 100%;
+  display: flex;
+  background: none;
+  margin-top: 30px;
+  border-bottom: 1px solid var(--lightgrey);
+}
+.newsletter_cont > form > input[type="email"] {
+  flex: 1;
+  border: none;
+  font-size: 14px;
+  font-family: var(--subtitle);
+  background: none;
+  color: var(--general);
+}
+.newsletter_cont > form > button {
+  background: none;
+  outline: none;
+  color: var(--general);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: var(--subtitle);
+}
+.newsletter_social {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social_icon {
+  margin-top: 30px;
+  color: var(--general);
+}
+/* -------------------------------------------------- */
+
+.wrapper_item2 {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.copy {
+  color: var(--lightgrey);
+  font-family: var(--subtitle);
+  font-size: 13px;
+}
